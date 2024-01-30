@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
@@ -11,9 +11,48 @@ import {
   Record,
   Agents,
 } from './components';
-import { faqs } from 'views/data';
 
 const CareerListing = (): JSX.Element => {
+  const [faqs, setFaqs] = useState([]);
+  const [listItems, setListItems] = useState([]);
+  const [tableData, setTableData] = useState([]);
+
+  useEffect(() => {
+    async function fetchFaqs() {
+      try {
+        const response = await fetch('http://localhost:3001/api/faqs');
+        const data = await response.json();
+        setFaqs(data);
+      } catch (error) {
+        console.error('Error fetching faqs:', error);
+      }
+    }
+
+    async function fetchListItems() {
+      try {
+        const response = await fetch('http://localhost:3001/api/listItems');
+        const data = await response.json();
+        setListItems(data);
+      } catch (error) {
+        console.error('Error fetching listItems:', error);
+      }
+    }
+
+    async function fetchTableData() {
+      try {
+        const response = await fetch('http://localhost:3001/api/tableData');
+        const data = await response.json();
+        setTableData(data);
+      } catch (error) {
+        console.error('Error fetching tableData:', error);
+      }
+    }
+
+    fetchFaqs();
+    fetchListItems();
+    fetchTableData();
+  }, []);
+
   return (
     <Main>
       <Box>
@@ -43,10 +82,10 @@ const CareerListing = (): JSX.Element => {
             <Manager />
           </Container>
           <Container>
-            <Record />
+            <Record listItems={listItems} />
           </Container>
           <Container>
-            <Agents />
+            <Agents tables={tableData} />
           </Container>
         </Box>
       </Box>

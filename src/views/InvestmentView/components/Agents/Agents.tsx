@@ -2,10 +2,19 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TableAgents from './components/TableAgents';
-import { tableData } from 'views/data';
 import { Container } from '@mui/material';
 
-const Agents = (): JSX.Element => {
+interface tablesAgents {
+  title: string;
+  columns: string[];
+  rows: string[][];
+}
+
+interface TablesAgentsProps {
+  tables: tablesAgents[];
+}
+
+const Agents: React.FC<TablesAgentsProps> = ({ tables }) => {
   return (
     <Box>
       <Box marginBottom={4}>
@@ -31,7 +40,7 @@ const Agents = (): JSX.Element => {
         </Typography>
       </Box>
       <Container>
-        <TableAgents tables={tableData} />
+        <TableAgents tables={tables} />
       </Container>
     </Box>
   );

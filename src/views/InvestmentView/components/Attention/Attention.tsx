@@ -6,20 +6,21 @@ import Typography from '@mui/material/Typography';
 const Attention = (): JSX.Element => {
   return (
     <Box>
-      <Box marginBottom={4}>
+      <Box>
         <Typography
           align={'left'}
           sx={{ textTransform: 'uppercase' }}
           variant={'h6'}
           color={'text.secondary'}
           fontWeight={700}
+          marginBottom={1}
         >
-          Preguntas frecuentes (FAQ)
+          Atención al Inversionista
         </Typography>
         <Typography
           fontWeight={400}
           color={'text.secondary'}
-          variant={'subtitle2'}
+          variant={'subtitle1'}
           align={'left'}
         >
           Procedimientos Relativos a Quejas y Reclamos de los Fondos APV

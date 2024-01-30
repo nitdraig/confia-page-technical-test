@@ -10,9 +10,17 @@ import {
   TableRow,
 } from '@mui/material';
 import Lists from './components/Lists';
-import { listItems } from 'views/data';
 
-const Record = (): JSX.Element => {
+interface listItemsRecord {
+  question: string;
+  answer: string[];
+}
+
+interface listItemsRecordProps {
+  listItems: listItemsRecord[];
+}
+
+const Record: React.FC<listItemsRecordProps> = ({ listItems }) => {
   return (
     <Box>
       <Box>
