@@ -2,7 +2,7 @@ const pages = {
   company: [
     {
       title: 'Conoce nuestros fondos',
-      href: '/career-listing',
+      href: '/investment',
     },
     {
       title: 'Atención al inversionista',

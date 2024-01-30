@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 
 import Container from 'components/Container';
-import { Topbar, Sidebar, Footer } from './components';
+import { Sidebar, Footer } from './components';
 import pages from '../navigation--docs';
 
 interface Props {
@@ -20,10 +20,6 @@ const Fixed = ({ children }: Props): JSX.Element => {
   });
 
   const [openSidebar, setOpenSidebar] = useState(false);
-
-  const handleSidebarOpen = (): void => {
-    setOpenSidebar(true);
-  };
 
   const handleSidebarClose = (): void => {
     setOpenSidebar(false);
@@ -40,11 +36,7 @@ const Fixed = ({ children }: Props): JSX.Element => {
           borderBottom: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
         }}
         elevation={0}
-      >
-        <Container maxWidth={1} paddingY={{ xs: 1, sm: 1.5 }}>
-          <Topbar onSidebarOpen={handleSidebarOpen} />
-        </Container>
-      </AppBar>
+      ></AppBar>
       <Sidebar
         onClose={handleSidebarClose}
         open={open}
