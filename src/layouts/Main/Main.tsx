@@ -57,6 +57,9 @@ const Main = ({ children, colorInvert = false }: Props): JSX.Element => {
         position={'sticky'}
         sx={{
           top: 0,
+          backgroundColor: 'white',
+          border: 'black',
+          borderBottom: '10px',
         }}
         elevation={trigger ? 1 : 0}
       >
