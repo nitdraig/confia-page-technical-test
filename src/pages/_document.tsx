@@ -7,7 +7,7 @@ import createEmotionServer from '@emotion/server/create-instance';
 export default class MyDocument extends Document {
   render(): JSX.Element {
     return (
-      <Html lang="en">
+      <Html lang="es">
         <Head>
           <meta charSet="utf-8" />
           <link
@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta
             name="description"
-            content="A modern design system for your new landing and web pages."
+            content="Colaborando a mejorar tus finanzas."
           />
           <meta
             name="robots"
@@ -31,11 +31,11 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:title"
-            content="theFront | UI Kit by Maccarian Agency."
+            content="CONFÍA | colaborando por tu libertad financiera."
           />
           <meta
             property="og:description"
-            content="A modern design system for your new landing and web pages."
+            content="Colaborando a mejorar tus finanzas."
           />
           <meta
             property="og:url"

@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 
-const ThemeModeToggler = (): JSX.Element => {
+const SearchButton = (): JSX.Element => {
   return (
     <Button
       sx={{
@@ -16,4 +16,4 @@ const ThemeModeToggler = (): JSX.Element => {
   );
 };
 
-export default ThemeModeToggler;
+export default SearchButton;

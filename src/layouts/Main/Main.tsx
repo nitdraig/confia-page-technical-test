@@ -19,11 +19,7 @@ interface Props {
   bgcolor?: string;
 }
 
-const Main = ({
-  children,
-  colorInvert = false,
-  bgcolor = 'transparent',
-}: Props): JSX.Element => {
+const Main = ({ children, colorInvert = false }: Props): JSX.Element => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -61,7 +57,6 @@ const Main = ({
         position={'sticky'}
         sx={{
           top: 0,
-          backgroundColor: bgcolor,
         }}
         elevation={trigger ? 1 : 0}
       >

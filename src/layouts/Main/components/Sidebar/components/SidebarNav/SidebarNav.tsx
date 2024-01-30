@@ -1,8 +1,5 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
-
 import NavItem from './components/NavItem';
 
 interface Props {
@@ -12,9 +9,6 @@ interface Props {
 }
 
 const SidebarNav = ({ pages }: Props): JSX.Element => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
-
   const { company: companyPages } = pages;
 
   return (
@@ -23,17 +17,13 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
         <Box
           display={'flex'}
           component="a"
-          href="/"
-          title="theFront"
+          href="/#"
+          title="Confía"
           width={{ xs: 100, md: 120 }}
         >
           <Box
             component={'img'}
-            src={
-              mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-            }
+            src="https://res.cloudinary.com/draig/image/upload/v1706560307/pruebas/confia/veenioiwmec8zf545ood.png"
             height={1}
             width={1}
           />
@@ -41,7 +31,7 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Company'} items={companyPages} />
+          <NavItem title={'Ahorro e inversión'} items={companyPages} />
         </Box>
         <Box>
           <a
@@ -104,31 +94,6 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
           >
             Eventos
           </a>
-        </Box>
-        <Box marginTop={2}>
-          <Button
-            size={'large'}
-            variant="outlined"
-            fullWidth
-            component="a"
-            href="https://thefront.maccarianagency.com/docs/introduction"
-            target={'blank'}
-          >
-            Documentation
-          </Button>
-        </Box>
-        <Box marginTop={1}>
-          <Button
-            size={'large'}
-            variant="contained"
-            color="primary"
-            fullWidth
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-          >
-            Purchase now
-          </Button>
         </Box>
       </Box>
     </Box>

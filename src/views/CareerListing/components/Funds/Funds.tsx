@@ -39,18 +39,21 @@ const mock = [
 const CompanyValues = (): JSX.Element => {
   return (
     <Box>
-      <Box marginBottom={4}>
+      <Box
+        marginBottom={{ xs: 0, sm: 4 }}
+        display={'flex'}
+        flexDirection={'column'}
+      >
         <Typography
-          align={'center'}
-          color={'text.secondary'}
-          sx={{ textTransform: 'uppercase' }}
-          variant={'subtitle2'}
-          fontWeight={600}
+          variant="h3"
+          gutterBottom
+          align={'left'}
+          color="#D3282A"
+          sx={{
+            fontWeight: 900,
+          }}
         >
-          Company values
-        </Typography>
-        <Typography fontWeight={700} variant={'h4'} align={'center'}>
-          Our company culture
+          Conoce nuestros Fondos
         </Typography>
       </Box>
       <Grid container spacing={4}>

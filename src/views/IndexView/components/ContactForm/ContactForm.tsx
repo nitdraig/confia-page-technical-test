@@ -42,10 +42,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} justifyContent="center">
+        <Typography variant="h3" gutterBottom>
+          Contactanos
+        </Typography>
         <Grid item xs={12}>
           <Typography variant="h4" gutterBottom>
-            Contacta con nuestros asesores
+            Comunícate con nuestros asesores
           </Typography>
         </Grid>
         <Grid
@@ -56,7 +59,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           xs={12}
           md={6}
           sx={{
-            display: { xs: 'none', md: 'flex' },
+            display: 'flex',
           }}
         >
           <Box component={Card} boxShadow={4} height={1} width={1}>
@@ -69,7 +72,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} md={6}>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -110,7 +113,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
               <Button
                 type="submit"
                 variant="contained"
-                style={{ color: '#ffffff', backgroundColor: '#D3282A' }}
+                style={{
+                  color: '#ffffff',
+                  backgroundColor: '#D3282A',
+                }}
               >
                 Enviar
               </Button>

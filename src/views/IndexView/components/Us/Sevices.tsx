@@ -145,7 +145,7 @@ const mock = [
 
 const Us = (): JSX.Element => {
   return (
-    <Box id="us">
+    <Box>
       <Box marginBottom={4}>
         <Box marginBottom={2}>
           <Typography

@@ -1,8 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-
-import ThemeModeToggler from 'components/ThemeModeToggler';
+import SearchButton from 'components/SearchButton';
 
 const TopNav = (): JSX.Element => {
   return (
@@ -12,7 +11,7 @@ const TopNav = (): JSX.Element => {
       marginTop={{ sm: 1 }}
       alignItems={'center'}
     >
-      <Box marginRight={{ xs: 1, sm: 2 }}>
+      <Box marginRight={{ xs: 0, sm: 2 }}>
         <Link
           underline="none"
           component="a"
@@ -31,7 +30,7 @@ const TopNav = (): JSX.Element => {
           </Box>
         </Link>
       </Box>
-      <Box marginRight={{ xs: 1, sm: 2 }}>
+      <Box marginRight={{ xs: 0, sm: 2 }}>
         <Link
           underline="none"
           component="a"
@@ -39,7 +38,7 @@ const TopNav = (): JSX.Element => {
           color={'common.white'}
           sx={{ display: 'flex', alignItems: 'center' }}
         >
-          Contactanos
+          Contáctanos
           <Box
             padding={0.5}
             display={'inline-flex'}
@@ -50,12 +49,11 @@ const TopNav = (): JSX.Element => {
           </Box>
         </Link>
       </Box>
-      <Box marginRight={{ xs: 1, sm: 2 }}>
+      <Box marginRight={{ xs: 0, sm: 2 }}>
         <Link
           underline="none"
           component="a"
-          href="/#more"
-          target={'blank'}
+          href="/#benefits"
           color={'common.white'}
         >
           Conoce más
@@ -69,8 +67,8 @@ const TopNav = (): JSX.Element => {
           </Box>
         </Link>
       </Box>
-      <Box>
-        <ThemeModeToggler />
+      <Box display={{ xs: 'none', md: 'block' }}>
+        <SearchButton />
       </Box>
     </Box>
   );

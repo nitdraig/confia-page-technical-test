@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { alpha, useTheme } from '@mui/material/styles';
+import { alpha } from '@mui/material/styles';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -15,8 +15,6 @@ interface Props {
 }
 
 const NavItem = ({ title, id, items }: Props): JSX.Element => {
-  const theme = useTheme();
-
   const [anchorEl, setAnchorEl] = useState(null);
   const [openedPopoverId, setOpenedPopoverId] = useState(null);
 
@@ -48,18 +46,17 @@ const NavItem = ({ title, id, items }: Props): JSX.Element => {
         onClick={(e) => handleClick(e, id)}
       >
         <Typography
-          fontWeight={openedPopoverId === id || hasActiveLink() ? 700 : 500}
+          fontWeight={openedPopoverId === id || hasActiveLink() ? 500 : 800}
           color={linkColor}
         >
           {title}
         </Typography>
         <ExpandMoreIcon
           sx={{
-            marginLeft: theme.spacing(1 / 4),
             width: 16,
             height: 16,
             transform: openedPopoverId === id ? 'rotate(180deg)' : 'none',
-            color: linkColor,
+            color: '#D3282A',
           }}
         />
       </Box>
@@ -86,7 +83,7 @@ const NavItem = ({ title, id, items }: Props): JSX.Element => {
             borderTopLeftRadius: 0,
             borderBottomRightRadius: 8,
             borderBottomLeftRadius: 8,
-            borderTop: `3px solid ${theme.palette.primary.main}`,
+            borderTop: '3px solid #D3282A',
           },
         }}
       >
@@ -99,13 +96,10 @@ const NavItem = ({ title, id, items }: Props): JSX.Element => {
                 fullWidth
                 sx={{
                   justifyContent: 'flex-start',
-                  color:
-                    activeLink === p.href
-                      ? theme.palette.primary.main
-                      : theme.palette.text.primary,
+                  color: ' #4e4e4e',
                   backgroundColor:
                     activeLink === p.href
-                      ? alpha(theme.palette.primary.main, 0.1)
+                      ? alpha('#D3282A', 0.1)
                       : 'transparent',
                   fontWeight: activeLink === p.href ? 1000 : 800,
                 }}

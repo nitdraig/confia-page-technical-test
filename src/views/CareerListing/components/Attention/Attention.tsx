@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-const About = (): JSX.Element => {
+const Attention = (): JSX.Element => {
   return (
     <Box>
       <Box marginBottom={4}>
@@ -81,4 +81,4 @@ const About = (): JSX.Element => {
   );
 };
 
-export default About;
+export default Attention;

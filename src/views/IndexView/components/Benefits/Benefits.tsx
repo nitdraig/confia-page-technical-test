@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -9,9 +8,8 @@ import Typography from '@mui/material/Typography';
 
 const mock = [
   {
-    title: 'Themeable',
-    subtitle:
-      'Customize any part of our components to match your design needs.',
+    title: 'Velocidad',
+    subtitle: 'Respondemos en menos de 24hrs.',
     icon: (
       <svg
         height={24}
@@ -31,9 +29,8 @@ const mock = [
     ),
   },
   {
-    title: 'Light and dark UI',
-    subtitle:
-      'Optimized for multiple color modes. Use light or dark, your choice.',
+    title: 'Transparencia',
+    subtitle: 'Toda la información que necesites para crear tu cartera ideal.',
     icon: (
       <svg
         height={24}
@@ -53,9 +50,8 @@ const mock = [
     ),
   },
   {
-    title: 'Composable',
-    subtitle:
-      'Designed with composition in mind. Compose new components with ease.',
+    title: 'Encriptación punta a punta',
+    subtitle: 'Nuestra prioridad es tu seguridad y la de tus datos.',
     icon: (
       <svg
         height={24}
@@ -75,9 +71,8 @@ const mock = [
     ),
   },
   {
-    title: 'Developer experience',
-    subtitle:
-      'Guaranteed to boost your productivity when building your app or website.',
+    title: 'Experiencia',
+    subtitle: 'Nuestros asesores tienen más de 5 años en  el mercado.',
     icon: (
       <svg
         height={24}
@@ -97,8 +92,9 @@ const mock = [
     ),
   },
   {
-    title: 'Continuous updates',
-    subtitle: 'We continually deploy improvements and new updates to theFront.',
+    title: 'Continua mejora',
+    subtitle:
+      'Estamos constantemente mejorando nuestras diferentes soluciones.',
     icon: (
       <svg
         height={24}
@@ -118,9 +114,8 @@ const mock = [
     ),
   },
   {
-    title: 'Free support',
-    subtitle:
-      '6 months of free technical support to help you build your website faster.',
+    title: 'Soporte libre de cargos',
+    subtitle: 'Tienes total libertad de consultas sin cargos adicionales.',
     icon: (
       <svg
         height={24}
@@ -142,7 +137,6 @@ const mock = [
 ];
 
 const Benefits = (): JSX.Element => {
-  const theme = useTheme();
   return (
     <Grid container spacing={4}>
       {mock.map((item, i) => (
@@ -163,8 +157,7 @@ const Benefits = (): JSX.Element => {
                 width={50}
                 height={50}
                 marginBottom={2}
-                bgcolor={theme.palette.primary.main}
-                color={theme.palette.background.paper}
+                bgcolor="#D3282A"
               >
                 {item.icon}
               </Box>

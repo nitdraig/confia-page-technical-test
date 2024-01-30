@@ -125,7 +125,7 @@ const Hero = (): JSX.Element => {
                 style={{ backgroundColor: '#D3282A' }}
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/home'}
+                href={'/#us'}
               >
                 Leer más
               </Button>
@@ -136,16 +136,14 @@ const Hero = (): JSX.Element => {
               >
                 <Button
                   component={'a'}
-                  href={
-                    'https://thefront.maccarianagency.com/docs/introduction'
-                  }
+                  href="/#"
                   target={'blank'}
                   variant="outlined"
                   style={{ borderColor: '#D3282A', color: '#D3282A' }}
                   size="large"
                   fullWidth={isMd ? false : true}
                 >
-                  Nuestros fondos
+                  Fondos
                 </Button>
               </Box>
             </Box>

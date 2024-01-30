@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>theFront | UI Kit by Maccarian Agency.</title>
+        <title>CONFÍA | colaborando por tu libertad financiera.</title>
       </Head>
       <Page>
         <Component {...pageProps} />
