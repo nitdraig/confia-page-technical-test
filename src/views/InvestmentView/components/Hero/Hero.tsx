@@ -1,19 +1,15 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from 'components/Container';
+import { Typography } from '@mui/material';
 
 const Hero = (): JSX.Element => {
-  const theme = useTheme();
-
   return (
     <Box
       sx={{
         position: 'relative',
-        backgroundColor: theme.palette.alternate.main,
-        backgroundImage: `linear-gradient(120deg, ${theme.palette.background.paper} 0%, ${theme.palette.alternate.main} 100%)`,
-        marginTop: -13,
+        marginTop: -26,
         paddingTop: 13,
       }}
     >
@@ -36,6 +32,19 @@ const Hero = (): JSX.Element => {
           </Grid>
         </Box>
       </Container>
+      <Box display={'flex'} flexDirection="column">
+        <Typography
+          variant="h2"
+          gutterBottom
+          align={'left'}
+          color="#D3282A"
+          style={{
+            fontWeight: 900,
+          }}
+        >
+          Conoce nuestros Fondos
+        </Typography>
+      </Box>
     </Box>
   );
 };

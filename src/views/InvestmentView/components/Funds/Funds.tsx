@@ -1,73 +1,47 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 
-const mock = [
-  {
-    title: 'Dynamic teams',
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-  },
-  {
-    title: 'Great teammates',
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-  },
-  {
-    title: 'Open communication',
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-  },
-  {
-    title: 'Autonomy and attitude',
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-  },
-  {
-    title: 'Support and win',
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-  },
-  {
-    title: 'Teamwork makes the dream work',
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-  },
-];
-
-const CompanyValues = (): JSX.Element => {
+const Funds = (): JSX.Element => {
   return (
     <Box>
-      <Box
-        marginBottom={{ xs: 0, sm: 4 }}
-        display={'flex'}
-        flexDirection={'column'}
-      >
-        <Typography
-          variant="h3"
-          gutterBottom
-          align={'left'}
-          color="#D3282A"
-          sx={{
-            fontWeight: 900,
-          }}
-        >
-          Conoce nuestros Fondos
-        </Typography>
-      </Box>
-      <Grid container spacing={4}>
-        {mock.map((item, i) => (
-          <Grid key={i} item xs={12} sm={6} md={4}>
-            <Typography variant={'h6'} fontWeight={600} gutterBottom>
-              {item.title}
-            </Typography>
-            <Typography color="text.secondary">{item.subtitle}</Typography>
-          </Grid>
-        ))}
+      <Grid container alignItems="stretch">
+        <Grid item xs={6}>
+          <Box
+            border="1px solid #e9e9e9"
+            padding={2}
+            style={{
+              borderRight: 0,
+              borderTopLeftRadius: 8,
+              borderBottomLeftRadius: 8,
+              height: '100%',
+            }}
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rem
+            libero, at, error illum quas expedita laboriosam aliquam ut quos
+            officiis voluptatem amet. Perferendis tempora, facere eaque aperiam
+            dignissimos vitae?
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Box
+            border="1px solid #e9e9e9"
+            padding={2}
+            style={{
+              borderTopRightRadius: 8,
+              borderBottomRightRadius: 8,
+              height: '100%',
+            }}
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+            laborum rerum harum quas ipsam optio quisquam reiciendis cupiditate
+            minus repellendus excepturi, quo exercitationem, cum aliquid, ea
+            delectus culpa suscipit debitis?
+          </Box>
+        </Grid>
       </Grid>
     </Box>
   );
 };
 
-export default CompanyValues;
+export default Funds;

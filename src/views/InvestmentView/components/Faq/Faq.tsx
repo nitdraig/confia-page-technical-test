@@ -4,6 +4,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
+  Box,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -19,6 +20,17 @@ interface FAQProps {
 const Faq: React.FC<FAQProps> = ({ faqs }) => {
   return (
     <div>
+      <Box marginBottom={4}>
+        <Typography
+          align={'left'}
+          sx={{ textTransform: 'uppercase' }}
+          variant={'h6'}
+          color={'text.secondary'}
+          fontWeight={700}
+        >
+          Preguntas frecuentes (FAQ)
+        </Typography>
+      </Box>
       {faqs.map((faq, index) => (
         <Accordion
           key={index}

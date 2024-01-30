@@ -8,33 +8,35 @@ const Attention = (): JSX.Element => {
     <Box>
       <Box marginBottom={4}>
         <Typography
-          align={'center'}
+          align={'left'}
           sx={{ textTransform: 'uppercase' }}
-          variant={'h5'}
+          variant={'h6'}
           color={'text.secondary'}
           fontWeight={700}
         >
-          Atención al inversionista
+          Preguntas frecuentes (FAQ)
         </Typography>
         <Typography
           fontWeight={400}
           color={'text.secondary'}
           variant={'subtitle2'}
-          align={'center'}
+          align={'left'}
         >
           Procedimientos Relativos a Quejas y Reclamos de los Fondos APV
         </Typography>
       </Box>
       <Grid container spacing={4}>
-        <Grid item container justifyContent="center" xs={12} md={6}>
+        <Grid item container justifyContent="center" xs={12} md={12}>
           <Typography color={'text.secondary'}>
             <ol>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>
+              <li style={{ paddingBottom: '1em' }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </li>
+              <li style={{ paddingBottom: '1em' }}>
                 Sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua.
               </li>
-              <li>
+              <li style={{ paddingBottom: '1em' }}>
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.
               </li>

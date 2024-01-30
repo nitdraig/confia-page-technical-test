@@ -20,24 +20,35 @@ const CareerListing = (): JSX.Element => {
         <Container>
           <Hero />
         </Container>
-        <Container id="funds">
-          <Funds />
-        </Container>
-        <Container id="atention">
-          <Attention />
-        </Container>
-        <Container id="faq">
-          <Faq faqs={faqs} />
-        </Container>
-        <Container maxWidth={1000}>
-          <Manager />
-        </Container>
-        <Container maxWidth={1000}>
-          <Record />
-        </Container>
-        <Container maxWidth={1000}>
-          <Agents />
-        </Container>
+        <Box
+          style={{
+            borderLeft: '1px solid #e0e0e0',
+            borderRight: '1px solid #e0e0e0',
+            margin: '0 auto',
+            width: 'calc(100% - 40px)',
+            marginBottom: '23m',
+          }}
+          maxWidth={600}
+        >
+          <Container id="funds">
+            <Funds />
+          </Container>
+          <Container id="atention">
+            <Attention />
+          </Container>
+          <Container id="faq">
+            <Faq faqs={faqs} />
+          </Container>
+          <Container>
+            <Manager />
+          </Container>
+          <Container>
+            <Record />
+          </Container>
+          <Container>
+            <Agents />
+          </Container>
+        </Box>
       </Box>
     </Main>
   );
