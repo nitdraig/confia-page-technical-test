@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha, useTheme } from '@mui/material/styles';
-
 import Container from 'components/Container';
 
 const images = [

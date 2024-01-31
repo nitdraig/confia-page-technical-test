@@ -81,7 +81,6 @@ const Main = ({ children, colorInvert = false }: Props): JSX.Element => {
         {children}
         <Divider />
       </main>
-
       <Footer />
     </Box>
   );

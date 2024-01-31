@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
