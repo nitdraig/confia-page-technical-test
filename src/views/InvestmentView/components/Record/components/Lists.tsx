@@ -33,7 +33,7 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
           </Typography>
           <ul>
             {item.functions.map((functionItem, functionIndex) => (
-              <li style={{ color: '#8f8f8f' }} key={functionIndex}>
+              <li style={{ color: ' #677788' }} key={functionIndex}>
                 {functionItem}
               </li>
             ))}

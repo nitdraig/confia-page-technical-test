@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 
 const Funds = (): JSX.Element => {
   return (
-    <Box>
+    <Box padding={2} marginTop={-8}>
       <Grid container alignItems="stretch">
         <Grid item xs={6}>
           <Box

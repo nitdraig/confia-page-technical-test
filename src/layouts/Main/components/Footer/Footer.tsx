@@ -68,25 +68,27 @@ const Footer = (): JSX.Element => {
 
   return (
     <Grid style={{ backgroundColor: '#c7c7c7' }}>
-      <Box style={{ backgroundColor: '#8b8b8b' }}>
+      <Box style={{ backgroundColor: '#7a7a7a' }}>
         <Box marginBottom={6} display={'flex'} justifyContent={'center'}>
           <Button
             variant="contained"
             style={{
               backgroundColor: '#ffffff',
-              color: '#8f8f8f',
+              color: '#6b6b6b',
               fontWeight: 800,
+              marginTop: '2em',
+              marginBottom: '-2.5em',
             }}
           >
-            Servicio de asistencia{' '}
+            Servicio de asistencia
           </Button>
         </Box>
-        <Box display={'flex'} justifyContent={'center'}>
+        <Box display={'flex'} padding={2} justifyContent={'center'}>
           <Typography
             style={{ color: '#ffffff', fontWeight: 600 }}
             justifyContent={'center'}
           >
-            Disponible las 24 horras llamando al 2216-0890 o *MÁS desde tu
+            Disponible las 24 horas llamando al 2216-0890 o *MÁS desde tu
             celular
           </Typography>
         </Box>
@@ -94,16 +96,23 @@ const Footer = (): JSX.Element => {
       <Box
         display={'flex'}
         justifyContent={'center'}
-        style={{ backgroundColor: '#8b8b8b' }}
+        style={{ backgroundColor: '#7a7a7a' }}
         alignItems={'center'}
         marginBottom={{ xs: 2, sm: 4 }}
       >
         <Box
-          component={'img'}
-          src="https://res.cloudinary.com/draig/image/upload/v1706692776/pruebas/confia/hylivwsfufacttaednbp.png"
-          height={70}
-          width={240}
-        />
+          style={{
+            backgroundColor: '#7a7a7a',
+          }}
+        >
+          <Box
+            component={'img'}
+            src="https://res.cloudinary.com/draig/image/upload/v1706692776/pruebas/confia/hylivwsfufacttaednbp.png"
+            height={70}
+            width={240}
+            marginBottom={1}
+          />
+        </Box>
       </Box>
 
       <Grid justifyContent={'center'} container spacing={2}>

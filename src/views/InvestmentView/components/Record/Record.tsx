@@ -14,7 +14,7 @@ interface listItemsRecordProps {
 
 const Record: React.FC<listItemsRecordProps> = ({ listItems }) => {
   return (
-    <Box>
+    <Box padding={2}>
       <Box>
         <Typography
           align={'left'}

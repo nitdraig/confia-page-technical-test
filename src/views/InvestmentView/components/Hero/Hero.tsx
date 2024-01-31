@@ -73,7 +73,6 @@ const Hero = (): JSX.Element => {
           gutterBottom
           align={'left'}
           color="#D3282A"
-          marginLeft={6}
           style={{
             fontWeight: 800,
           }}

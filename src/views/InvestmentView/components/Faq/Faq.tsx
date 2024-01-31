@@ -19,7 +19,7 @@ interface FAQProps {
 
 const Faq: React.FC<FAQProps> = ({ faqs }) => {
   return (
-    <div>
+    <div style={{ paddingLeft: 20, paddingRight: 20 }}>
       <Box marginBottom={4}>
         <Typography
           align={'left'}
@@ -33,17 +33,22 @@ const Faq: React.FC<FAQProps> = ({ faqs }) => {
       {faqs.map((faq, index) => (
         <Accordion
           key={index}
-          sx={{ borderRadius: '8px', overflow: 'hidden', marginTop: '0.5em' }}
+          sx={{
+            borderRadius: '8px',
+            overflow: 'hidden',
+            marginTop: '0.3em',
+            boxShadow: 'none',
+          }}
         >
           <AccordionSummary
-            style={{ backgroundColor: '#fafafa' }}
+            style={{ backgroundColor: '#eeeded' }}
             expandIcon={<ExpandMoreIcon />}
           >
             <Typography variant="subtitle1">{faq.question}</Typography>
           </AccordionSummary>
           <AccordionDetails
             style={{
-              backgroundColor: '#fafafa',
+              backgroundColor: '#eeeded',
               borderEndEndRadius: '8px',
               borderEndStartRadius: '8px',
             }}

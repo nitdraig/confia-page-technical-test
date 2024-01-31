@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 const Attention = (): JSX.Element => {
   return (
-    <Box>
+    <Box padding={2}>
       <Box>
         <Typography
           align={'left'}
@@ -27,25 +27,22 @@ const Attention = (): JSX.Element => {
       </Box>
       <Grid container spacing={4}>
         <Grid item container justifyContent="center" xs={12} md={12}>
-          <Typography color={'text.secondary'}>
-            <ol>
-              <li style={{ paddingBottom: '1em' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </li>
-              <li style={{ paddingBottom: '1em' }}>
-                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </li>
-              <li style={{ paddingBottom: '1em' }}>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </li>
-              <li>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-              </li>
-            </ol>
-          </Typography>
+          <ol style={{ color: '#677788' }}>
+            <li style={{ paddingBottom: '1em' }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li style={{ paddingBottom: '1em' }}>
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li style={{ paddingBottom: '1em' }}>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </li>
+            <li>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </li>
+          </ol>
         </Grid>
       </Grid>
     </Box>

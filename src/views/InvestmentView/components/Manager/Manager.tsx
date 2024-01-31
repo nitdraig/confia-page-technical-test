@@ -14,7 +14,7 @@ interface ManagerProps {
 
 const Manager: React.FC<ManagerProps> = ({ tableInfo }) => {
   return (
-    <Box>
+    <Box padding={2}>
       <Box>
         <Typography
           marginBottom={2}

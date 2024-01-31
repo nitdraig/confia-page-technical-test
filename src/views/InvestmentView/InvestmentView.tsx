@@ -12,7 +12,7 @@ import {
   Agents,
 } from './components';
 import { Socialbox } from 'components/Socialbox';
-const CareerListing = (): JSX.Element => {
+const InvestmentView = (): JSX.Element => {
   const [faqs, setFaqs] = useState([]);
   const [listItems, setListItems] = useState([]);
   const [tableData, setTableData] = useState([]);
@@ -66,43 +66,34 @@ const CareerListing = (): JSX.Element => {
 
   return (
     <Main>
-      <Box>
-        <Container>
-          <Hero />
-        </Container>
-        <Box
-          style={{
-            borderLeft: '1px solid #e0e0e0',
-            borderRight: '1px solid #e0e0e0',
-            margin: '0 auto',
-            width: 'calc(100% - 40px)',
-            marginBottom: '23px',
-          }}
-          maxWidth={600}
-        >
-          <Container id="funds">
-            <Funds />
-          </Container>
-          <Container id="atention">
-            <Attention />
-          </Container>
-          <Container id="faq">
-            <Faq faqs={faqs} />
-          </Container>
-          <Container>
-            <Manager tableInfo={tablesData} />
-          </Container>
-          <Container>
-            <Record listItems={listItems} />
-          </Container>
-          <Container marginBottom={6}>
-            <Agents tables={tableData} />
-          </Container>
-        </Box>
+      <Container>
+        <Hero />
+      </Container>
+      <Box
+        style={{
+          borderLeft: '1px solid #e0e0e0',
+          borderRight: '1px solid #e0e0e0',
+          margin: '0 auto',
+          width: 'calc(100% - 40px)',
+          marginBottom: '23px',
+        }}
+        maxWidth={600}
+      >
+        <Funds />
+
+        <Attention />
+
+        <Faq faqs={faqs} />
+
+        <Manager tableInfo={tablesData} />
+
+        <Record listItems={listItems} />
+
+        <Agents tables={tableData} />
       </Box>
       <Socialbox />
     </Main>
   );
 };
 
-export default CareerListing;
+export default InvestmentView;
