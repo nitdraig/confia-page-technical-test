@@ -13,93 +13,100 @@
       "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
     },
     {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
+      "question": "¿Cómo puedo contactar al servicio al cliente?",
+      "answer": "Puedes contactar a nuestro servicio al cliente llamando al número XXX-XXXX o enviando un correo electrónico a info@tuempresa.com."
     },
     {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
+      "question": "¿Cómo puedo abrir una cuenta de inversión?",
+      "answer": "Puedes abrir una cuenta de inversión completando nuestro formulario en línea o visitando nuestras oficinas para obtener asistencia personalizada."
     },
     {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
+      "question": "¿Cuál es el monto mínimo para comenzar a invertir?",
+      "answer": "El monto mínimo para comenzar a invertir varía según el tipo de cuenta y los productos de inversión. Por favor, contáctanos para obtener información específica sobre el monto mínimo requerido."
     },
     {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
+      "question": "¿Ofrecen asesoramiento financiero personalizado?",
+      "answer": "Sí, ofrecemos asesoramiento financiero personalizado para ayudarte a alcanzar tus objetivos financieros. Puedes programar una consulta con uno de nuestros asesores financieros."
     },
     {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
+      "question": "¿Qué tipo de inversiones ofrecen?",
+      "answer": "Ofrecemos una amplia gama de opciones de inversión, que incluyen acciones, bonos, fondos mutuos, fondos de índice y más. Nuestros asesores pueden ayudarte a encontrar las inversiones que se adapten mejor a tus objetivos y tolerancia al riesgo."
     },
     {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos pagos en efectivo, tarjeta de crédito y transferencia bancaria."
+      "question": "¿Cuánto tiempo lleva procesar una transacción?",
+      "answer": "El tiempo necesario para procesar una transacción puede variar según el tipo de inversión y las condiciones del mercado. Sin embargo, generalmente procuramos procesar las transacciones de manera oportuna para garantizar la eficiencia y la satisfacción del cliente."
     }
   ],
   "listItems": [
     {
-      "question": "Gerente de Inversiones AFP CONFIA",
-      "answer": ["hola", "hola", "hola"]
+      "rol": "Gerente de Inversiones AFP CONFIA",
+      "functions": [
+        "Supervisar el diseño e implementación de estrategias de inversión.",
+        "Evaluar y gestionar los riesgos asociados a las inversiones.",
+        "Analizar el desempeño de las carteras de inversión y proponer ajustes."
+      ]
     },
     {
-      "question": "Oficial de Riesto Fiduciario AFP CONFIA",
-      "answer": ["hola", "hola", "hola"]
+      "rol": "Oficial de Riesgo Fiduciario AFP CONFIA",
+      "functions": [
+        "Evaluar los riesgos fiduciarios asociados a las operaciones de la AFP.",
+        "Desarrollar e implementar políticas y procedimientos de gestión de riesgos.",
+        "Monitorear y reportar el cumplimiento de las políticas y normativas de riesgo."
+      ]
     }
   ],
   "tableData": [
     {
       "title": "San Salvador",
-      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
+      "columns": ["Nombre completo", "Correo electrónico", "Teléfono", "País"],
       "rows": [
-        [
-          "Fila 1, Columna 1",
-          "Fila 1, Columna 2",
-          "Fila 1, Columna 3",
-          "Fila 1, Columna 4"
-        ],
-        [
-          "Fila 2, Columna 1",
-          "Fila 2, Columna 2",
-          "Fila 2, Columna 3",
-          "Fila 2, Columna 4"
-        ]
+        ["John Doe", "john.doe@example.com", "555-1234", "El Salvador"],
+        ["Jane Smith", "jane.smith@example.com", "555-5678", "El Salvador"]
       ]
     },
     {
       "title": "San Salvador Oriental",
-      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
+      "columns": ["Nombre completo", "Correo electrónico", "Teléfono", "País"],
       "rows": [
-        [
-          "Fila 1, Columna 1",
-          "Fila 1, Columna 2",
-          "Fila 1, Columna 3",
-          "Fila 1, Columna 4"
-        ],
-        [
-          "Fila 2, Columna 1",
-          "Fila 2, Columna 2",
-          "Fila 2, Columna 3",
-          "Fila 2, Columna 4"
-        ]
+        ["Juan Pérez", "juan.perez@example.com", "555-4321", "El Salvador"],
+        ["María García", "maria.garcia@example.com", "555-8765", "El Salvador"]
       ]
     },
     {
       "title": "San Salvador Occidental",
+      "columns": ["Nombre completo", "Correo electrónico", "Teléfono", "País"],
+      "rows": [
+        ["Pedro López", "pedro.lopez@example.com", "555-9876", "El Salvador"],
+        ["Ana Martínez", "ana.martinez@example.com", "555-5432", "El Salvador"]
+      ]
+    }
+  ],
+  "tablesData": [
+    {
       "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
       "rows": [
-        [
-          "Fila 1, Columna 1",
-          "Fila 1, Columna 2",
-          "Fila 1, Columna 3",
-          "Fila 1, Columna 4"
-        ],
-        [
-          "Fila 2, Columna 1",
-          "Fila 2, Columna 2",
-          "Fila 2, Columna 3",
-          "Fila 2, Columna 4"
-        ]
+        ["Fila 1, Columna 1"],
+        ["Fila 2, Columna 1"],
+        ["Fila 1, Columna 1"],
+        ["Fila 2, Columna 1"]
+      ]
+    },
+    {
+      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
+      "rows": [
+        ["Fila 1, Columna 1"],
+        ["Fila 2, Columna 1"],
+        ["Fila 1, Columna 1"],
+        ["Fila 2, Columna 1"]
+      ]
+    },
+    {
+      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
+      "rows": [
+        ["Fila 1, Columna 1"],
+        ["Fila 2, Columna 1"],
+        ["Fila 1, Columna 1"],
+        ["Fila 2, Columna 1"]
       ]
     }
   ]

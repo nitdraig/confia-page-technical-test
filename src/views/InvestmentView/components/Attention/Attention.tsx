@@ -9,7 +9,6 @@ const Attention = (): JSX.Element => {
       <Box>
         <Typography
           align={'left'}
-          sx={{ textTransform: 'uppercase' }}
           variant={'h6'}
           color={'text.secondary'}
           fontWeight={700}

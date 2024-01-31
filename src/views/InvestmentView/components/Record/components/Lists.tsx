@@ -2,8 +2,8 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 
 interface ListItem {
-  question: string;
-  answer: string[];
+  rol: string;
+  functions: string[];
 }
 
 interface ListsProps {
@@ -19,22 +19,22 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
             fontWeight={600}
             color={'text.secondary'}
             variant={'subtitle1'}
-            align={'center'}
+            align={'left'}
           >
-            {item.question}
+            {item.rol}
           </Typography>
           <Typography
             fontWeight={400}
             color={'text.secondary'}
             variant={'subtitle2'}
-            align={'center'}
+            align={'left'}
           >
             Funciones principales:
           </Typography>
           <ul>
-            {item.answer.map((answerItem, answerIndex) => (
-              <li style={{ color: '#8f8f8f' }} key={answerIndex}>
-                {answerItem}
+            {item.functions.map((functionItem, functionIndex) => (
+              <li style={{ color: '#8f8f8f' }} key={functionIndex}>
+                {functionItem}
               </li>
             ))}
           </ul>

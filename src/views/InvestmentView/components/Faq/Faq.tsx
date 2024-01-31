@@ -23,7 +23,6 @@ const Faq: React.FC<FAQProps> = ({ faqs }) => {
       <Box marginBottom={4}>
         <Typography
           align={'left'}
-          sx={{ textTransform: 'uppercase' }}
           variant={'h6'}
           color={'text.secondary'}
           fontWeight={700}
@@ -37,14 +36,14 @@ const Faq: React.FC<FAQProps> = ({ faqs }) => {
           sx={{ borderRadius: '8px', overflow: 'hidden', marginTop: '0.5em' }}
         >
           <AccordionSummary
-            style={{ backgroundColor: '#f3f3f3' }}
+            style={{ backgroundColor: '#fafafa' }}
             expandIcon={<ExpandMoreIcon />}
           >
             <Typography variant="subtitle1">{faq.question}</Typography>
           </AccordionSummary>
           <AccordionDetails
             style={{
-              backgroundColor: '#f3f3f3',
+              backgroundColor: '#fafafa',
               borderEndEndRadius: '8px',
               borderEndStartRadius: '8px',
             }}

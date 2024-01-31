@@ -16,11 +16,12 @@ const CareerListing = (): JSX.Element => {
   const [faqs, setFaqs] = useState([]);
   const [listItems, setListItems] = useState([]);
   const [tableData, setTableData] = useState([]);
-
+  const [tablesData, setTablesData] = useState([]);
+  const apiUrl = 'http://localhost:3000';
   useEffect(() => {
     async function fetchFaqs() {
       try {
-        const response = await fetch('http://localhost:3001/api/faqs');
+        const response = await fetch(`${apiUrl}/faqs`);
         const data = await response.json();
         setFaqs(data);
       } catch (error) {
@@ -30,7 +31,7 @@ const CareerListing = (): JSX.Element => {
 
     async function fetchListItems() {
       try {
-        const response = await fetch('http://localhost:3001/api/listItems');
+        const response = await fetch(`${apiUrl}/listItems`);
         const data = await response.json();
         setListItems(data);
       } catch (error) {
@@ -40,9 +41,18 @@ const CareerListing = (): JSX.Element => {
 
     async function fetchTableData() {
       try {
-        const response = await fetch('http://localhost:3001/api/tableData');
+        const response = await fetch(`${apiUrl}/tableData`);
         const data = await response.json();
         setTableData(data);
+      } catch (error) {
+        console.error('Error fetching tableData:', error);
+      }
+    }
+    async function fetchTablesData() {
+      try {
+        const response = await fetch(`${apiUrl}/tablesData`);
+        const data = await response.json();
+        setTablesData(data);
       } catch (error) {
         console.error('Error fetching tableData:', error);
       }
@@ -51,6 +61,7 @@ const CareerListing = (): JSX.Element => {
     fetchFaqs();
     fetchListItems();
     fetchTableData();
+    fetchTablesData();
   }, []);
 
   return (
@@ -79,12 +90,12 @@ const CareerListing = (): JSX.Element => {
             <Faq faqs={faqs} />
           </Container>
           <Container>
-            <Manager />
+            <Manager tableInfo={tablesData} />
           </Container>
           <Container>
             <Record listItems={listItems} />
           </Container>
-          <Container>
+          <Container marginBottom={6}>
             <Agents tables={tableData} />
           </Container>
         </Box>

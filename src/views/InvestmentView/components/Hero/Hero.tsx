@@ -26,7 +26,7 @@ const Hero = (): JSX.Element => {
                 src={
                   'https://res.cloudinary.com/draig/image/upload/v1706579019/pruebas/confia/y0rpwg5f10pwp0nigtla.png'
                 }
-                alt="..."
+                alt="Confía background"
               />
             </Grid>
           </Grid>

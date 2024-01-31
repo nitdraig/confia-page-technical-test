@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import './../app/globals.css';
 import Page from '../components/Page';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

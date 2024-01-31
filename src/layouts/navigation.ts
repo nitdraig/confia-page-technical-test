@@ -6,19 +6,19 @@ const pages = {
     },
     {
       title: 'Atención al inversionista',
-      href: '/career-listing/#',
+      href: '/investment',
     },
     {
       title: 'Preguntas frecuentes',
-      href: '/career-listing/#',
+      href: '/investment',
     },
     {
       title: 'Nuestros Administradores',
-      href: '/career-listing/#',
+      href: '/investment',
     },
     {
       title: 'Nuestro equipo',
-      href: '/career-listing/#',
+      href: '/investment',
     },
   ],
 };

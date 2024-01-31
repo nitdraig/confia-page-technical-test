@@ -2,8 +2,6 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TableAgents from './components/TableAgents';
-import { Container } from '@mui/material';
-
 interface tablesAgents {
   title: string;
   columns: string[];
@@ -17,13 +15,13 @@ interface TablesAgentsProps {
 const Agents: React.FC<TablesAgentsProps> = ({ tables }) => {
   return (
     <Box>
-      <Box marginBottom={4}>
+      <Box>
         <Typography
-          align={'center'}
-          sx={{ textTransform: 'uppercase' }}
+          align={'left'}
           variant={'h5'}
           color={'text.secondary'}
           fontWeight={700}
+          marginBottom={2}
         >
           Agentes comercializadores
         </Typography>
@@ -31,7 +29,8 @@ const Agents: React.FC<TablesAgentsProps> = ({ tables }) => {
           fontWeight={400}
           color={'text.secondary'}
           variant={'subtitle2'}
-          align={'center'}
+          align={'left'}
+          marginBottom={2}
         >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
           distinctio error voluptas perferendis quam laborum officiis aliquam,
@@ -39,9 +38,7 @@ const Agents: React.FC<TablesAgentsProps> = ({ tables }) => {
           qui iure labore.
         </Typography>
       </Box>
-      <Container>
-        <TableAgents tables={tables} />
-      </Container>
+      <TableAgents tables={tables} />
     </Box>
   );
 };

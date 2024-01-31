@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
 
 const Funds = (): JSX.Element => {
   return (
@@ -8,7 +9,7 @@ const Funds = (): JSX.Element => {
       <Grid container alignItems="stretch">
         <Grid item xs={6}>
           <Box
-            border="1px solid #e9e9e9"
+            border="2px solid #e9e9e9"
             padding={2}
             style={{
               borderRight: 0,
@@ -17,15 +18,33 @@ const Funds = (): JSX.Element => {
               height: '100%',
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rem
-            libero, at, error illum quas expedita laboriosam aliquam ut quos
-            officiis voluptatem amet. Perferendis tempora, facere eaque aperiam
-            dignissimos vitae?
+            <Typography
+              marginBottom={2}
+              variant={'body1'}
+              color={'text.secondary'}
+              fontWeight={700}
+            >
+              Proyecta 5Plus
+            </Typography>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+            delectus culpa suscipit debitis?
+            <br />
+            <Typography
+              marginBottom={2}
+              marginTop={2}
+              variant={'body1'}
+              color={'text.secondary'}
+              fontWeight={700}
+            >
+              Proyecta 5Plus
+            </Typography>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+            laborum rerum harum quas ipsam optio quisquam reiciendis cupiditate
           </Box>
         </Grid>
         <Grid item xs={6}>
           <Box
-            border="1px solid #e9e9e9"
+            border="2px solid #e9e9e9"
             padding={2}
             style={{
               borderTopRightRadius: 8,
@@ -33,10 +52,28 @@ const Funds = (): JSX.Element => {
               height: '100%',
             }}
           >
+            <Typography
+              marginBottom={2}
+              variant={'body1'}
+              color={'text.secondary'}
+              fontWeight={700}
+            >
+              Proyecta Life
+            </Typography>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
             laborum rerum harum quas ipsam optio quisquam reiciendis cupiditate
-            minus repellendus excepturi, quo exercitationem, cum aliquid, ea
-            delectus culpa suscipit debitis?
+            <br />
+            <Typography
+              marginBottom={2}
+              marginTop={2}
+              variant={'body1'}
+              color={'text.secondary'}
+              fontWeight={700}
+            >
+              Proyecta Life
+            </Typography>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+            laborum rerum harum quas ipsam optio quisquam reiciendis cupiditate
           </Box>
         </Grid>
       </Grid>
