@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createCache from '@emotion/cache';

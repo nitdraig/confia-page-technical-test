@@ -83,30 +83,38 @@
   ],
   "tablesData": [
     {
-      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
+      "columns": [
+        "Asiento Registral No.",
+        "Fecha",
+        "Nombre de administrador",
+        "Nombre gestor"
+      ],
       "rows": [
-        ["Fila 1, Columna 1"],
-        ["Fila 2, Columna 1"],
-        ["Fila 1, Columna 1"],
-        ["Fila 2, Columna 1"]
+        ["Pensión por retiro"],
+        ["AD-0001-2020"],
+        ["Rafel Atilio ", "García Prieto"],
+        ["Administrador"]
       ]
     },
     {
-      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
       "rows": [
-        ["Fila 1, Columna 1"],
-        ["Fila 2, Columna 1"],
-        ["Fila 1, Columna 1"],
-        ["Fila 2, Columna 1"]
+        ["Beneficio económico permanente, Columna 1"],
+        ["AD-1025-2019"],
+        ["Eduardo Felipe"],
+        ["Fondos de Pensión"]
       ]
+    }
+  ],
+  "listTableData": [
+    {
+      "columns": ["Año", "Estudio", "Lugar"],
+      "rows": [["2008"], ["MBA, Babson College"], ["Wellesley, Massachusetts"]]
     },
     {
-      "columns": ["Columna 1", "Columna 2", "Columna 3", "Columna 4"],
       "rows": [
-        ["Fila 1, Columna 1"],
-        ["Fila 2, Columna 1"],
-        ["Fila 1, Columna 1"],
-        ["Fila 2, Columna 1"]
+        ["1998"],
+        ["Ingenieria Industrial, Lousiana"],
+        ["Barton Rouge, Louisiana"]
       ]
     }
   ]

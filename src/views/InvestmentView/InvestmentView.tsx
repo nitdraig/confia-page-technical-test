@@ -17,6 +17,7 @@ const InvestmentView = (): JSX.Element => {
   const [listItems, setListItems] = useState([]);
   const [tableData, setTableData] = useState([]);
   const [tablesData, setTablesData] = useState([]);
+  const [listTableData, setlistTableData] = useState([]);
   const apiUrl = 'http://localhost:3000';
   useEffect(() => {
     async function fetchFaqs() {
@@ -24,6 +25,15 @@ const InvestmentView = (): JSX.Element => {
         const response = await fetch(`${apiUrl}/faqs`);
         const data = await response.json();
         setFaqs(data);
+      } catch (error) {
+        console.error('Error fetching faqs:', error);
+      }
+    }
+    async function fetchListTableData() {
+      try {
+        const response = await fetch(`${apiUrl}/listTableData`);
+        const data = await response.json();
+        setlistTableData(data);
       } catch (error) {
         console.error('Error fetching faqs:', error);
       }
@@ -62,6 +72,7 @@ const InvestmentView = (): JSX.Element => {
     fetchListItems();
     fetchTableData();
     fetchTablesData();
+    fetchListTableData();
   }, []);
 
   return (
@@ -80,15 +91,10 @@ const InvestmentView = (): JSX.Element => {
         maxWidth={600}
       >
         <Funds />
-
         <Attention />
-
         <Faq faqs={faqs} />
-
         <Manager tableInfo={tablesData} />
-
-        <Record listItems={listItems} />
-
+        <Record listItems={listItems} listTableData={listTableData} />
         <Agents tables={tableData} />
       </Box>
       <Socialbox />

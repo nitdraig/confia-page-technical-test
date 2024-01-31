@@ -2,23 +2,32 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Lists from './components/Lists';
+import Tables from 'components/Tables';
 
 interface listItemsRecord {
   rol: string;
   functions: string[];
 }
+interface listableDataRecord {
+  rows: string[];
+  columns: string[];
+}
 
 interface listItemsRecordProps {
   listItems: listItemsRecord[];
+  listTableData: listableDataRecord[];
 }
 
-const Record: React.FC<listItemsRecordProps> = ({ listItems }) => {
+const Record: React.FC<listItemsRecordProps> = ({
+  listItems,
+  listTableData,
+}) => {
   return (
     <Box padding={2}>
       <Box>
         <Typography
           align={'left'}
-          variant={'h5'}
+          variant={'subtitle1'}
           color={'text.secondary'}
           fontWeight={700}
           marginBottom={2}
@@ -29,7 +38,7 @@ const Record: React.FC<listItemsRecordProps> = ({ listItems }) => {
         <Typography
           fontWeight={700}
           color={'text.secondary'}
-          variant={'subtitle2'}
+          variant={'subtitle1'}
           align={'left'}
           marginBottom={2}
         >
@@ -48,16 +57,18 @@ const Record: React.FC<listItemsRecordProps> = ({ listItems }) => {
           recusandae consequatur incidunt, at perferendis saepe odit!
         </Typography>
       </Box>
-
+      <Box paddingBottom={2}>
+        <Tables tableInfo={listTableData} />
+      </Box>
       <Box>
         <Typography
           align={'left'}
           variant={'subtitle2'}
           color={'text.secondary'}
           fontWeight={500}
-          marginBottom={2}
+          marginBottom={1}
         >
-          Experiencia Profesional
+          Experiencia Profesional:
         </Typography>
         <Lists lists={listItems} />
       </Box>
