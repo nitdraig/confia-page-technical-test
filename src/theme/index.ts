@@ -3,7 +3,7 @@ import { createTheme, ComponentsOverrides } from '@mui/material/styles';
 import shadows from './shadows';
 import { light, dark } from './palette';
 
-const getTheme = (mode: string, themeToggler: () => void): Theme =>
+const getTheme = (mode: string): Theme =>
   responsiveFontSizes(
     createTheme({
       palette: mode === 'light' ? light : dark,

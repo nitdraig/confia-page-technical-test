@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
 
 const Footer = (): JSX.Element => {
   const columns = [
@@ -66,35 +67,66 @@ const Footer = (): JSX.Element => {
   ];
 
   return (
-    <Grid>
+    <Grid style={{ backgroundColor: '#c7c7c7' }}>
+      <Box style={{ backgroundColor: '#8b8b8b' }}>
+        <Box marginBottom={6} display={'flex'} justifyContent={'center'}>
+          <Button
+            variant="contained"
+            style={{
+              backgroundColor: '#ffffff',
+              color: '#8f8f8f',
+              fontWeight: 800,
+            }}
+          >
+            Servicio de asistencia{' '}
+          </Button>
+        </Box>
+        <Box display={'flex'} justifyContent={'center'}>
+          <Typography
+            style={{ color: '#ffffff', fontWeight: 600 }}
+            justifyContent={'center'}
+          >
+            Disponible las 24 horras llamando al 2216-0890 o *MÁS desde tu
+            celular
+          </Typography>
+        </Box>
+      </Box>
       <Box
         display={'flex'}
         justifyContent={'center'}
+        style={{ backgroundColor: '#8b8b8b' }}
         alignItems={'center'}
         marginBottom={{ xs: 2, sm: 4 }}
       >
         <Box
           component={'img'}
-          src="https://res.cloudinary.com/draig/image/upload/v1706560307/pruebas/confia/veenioiwmec8zf545ood.png"
-          height={60}
-          width={200}
+          src="https://res.cloudinary.com/draig/image/upload/v1706692776/pruebas/confia/hylivwsfufacttaednbp.png"
+          height={70}
+          width={240}
         />
       </Box>
+
       <Grid justifyContent={'center'} container spacing={2}>
         {columns.map((column, index) => (
-          <Grid item xs={12} sm={2.3} key={index}>
+          <Grid
+            item
+            xs={12}
+            style={{ paddingLeft: '2em', paddingRight: '2em' }}
+            sm={2.3}
+            key={index}
+          >
             <Box marginTop={1}>
-              <Typography variant="h6" color="text.primary">
+              <Typography variant="h6" color="black">
                 {column.title}
               </Typography>
               {column.links.map((link, linkIndex) => (
-                <Box key={linkIndex} marginTop={1}>
+                <Box key={linkIndex} marginTop={0.5}>
                   <Link
                     underline="none"
                     component="a"
                     href={link.url}
                     color="text.primary"
-                    variant={'subtitle2'}
+                    style={{ fontSize: '12px' }}
                   >
                     {link.text}
                   </Link>
@@ -103,11 +135,13 @@ const Footer = (): JSX.Element => {
             </Box>
           </Grid>
         ))}
-        <Grid item xs={12}>
+        <Grid marginTop={8} style={{ backgroundColor: '#dadada' }} item xs={12}>
           <Typography
+            marginLeft={5.5}
+            marginBottom={2}
             align={'left'}
             variant={'subtitle2'}
-            color="text.secondary"
+            color="black"
             gutterBottom
           >
             2024 &copy; Copyright - AFP Confía - {}

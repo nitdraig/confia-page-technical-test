@@ -81,9 +81,8 @@ const Main = ({ children, colorInvert = false }: Props): JSX.Element => {
         {children}
         <Divider />
       </main>
-      <Container paddingY={4}>
-        <Footer />
-      </Container>
+
+      <Footer />
     </Box>
   );
 };

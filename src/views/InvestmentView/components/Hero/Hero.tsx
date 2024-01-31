@@ -3,14 +3,15 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from 'components/Container';
 import { Typography } from '@mui/material';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import NavigateNextOutlinedIcon from '@mui/icons-material/NavigateNextOutlined';
 
 const Hero = (): JSX.Element => {
   return (
     <Box
       sx={{
         position: 'relative',
-        marginTop: -26,
-        paddingTop: 13,
+        paddingTop: '-30em',
       }}
     >
       <Container>
@@ -26,20 +27,55 @@ const Hero = (): JSX.Element => {
                 src={
                   'https://res.cloudinary.com/draig/image/upload/v1706579019/pruebas/confia/y0rpwg5f10pwp0nigtla.png'
                 }
+                sx={{
+                  marginTop: { xs: '-3em', sm: '-4em', md: '-4em' },
+                }}
                 alt="Confía background"
               />
             </Grid>
           </Grid>
         </Box>
       </Container>
+      <Grid container spacing={1}>
+        <Grid item xs={10} sm={6} md={4} lg={6}>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <HomeOutlinedIcon style={{ color: '#D3282A' }} />
+            <NavigateNextOutlinedIcon style={{ color: '#a5a5a5' }} />
+            <Typography
+              variant="subtitle2"
+              color={'#b8b8b8'}
+              sx={{ marginLeft: '4px' }}
+            >
+              Ahorro e inversiones
+            </Typography>
+            <NavigateNextOutlinedIcon style={{ color: '#a5a5a5' }} />
+            <Typography
+              variant="subtitle2"
+              color={'#b8b8b8'}
+              sx={{ marginLeft: '4px' }}
+            >
+              Ahorro voluntario
+            </Typography>
+            <NavigateNextOutlinedIcon style={{ color: '#a5a5a5' }} />
+            <Typography
+              variant="subtitle2"
+              color={'#b8b8b8'}
+              sx={{ marginLeft: '4px', fontWeight: 500, color: '#D3282A' }}
+            >
+              Conoce nuestros Fondos
+            </Typography>
+          </Box>
+        </Grid>
+      </Grid>
       <Box display={'flex'} flexDirection="column">
         <Typography
           variant="h2"
           gutterBottom
           align={'left'}
           color="#D3282A"
+          marginLeft={6}
           style={{
-            fontWeight: 900,
+            fontWeight: 800,
           }}
         >
           Conoce nuestros Fondos

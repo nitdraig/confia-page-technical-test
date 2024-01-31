@@ -11,6 +11,20 @@ interface Props {
 const SidebarNav = ({ pages }: Props): JSX.Element => {
   const { company: companyPages } = pages;
 
+  const linkStyles = {
+    fontWeight: '800',
+    color: '#686868',
+    textDecoration: 'none',
+  };
+
+  const links = [
+    { title: 'Trámites en línea', href: '#' },
+    { title: 'Empresa', href: '#' },
+    { title: 'Pensión', href: '#' },
+    { title: 'Descuentos', href: '#' },
+    { title: 'Eventos', href: '#' },
+  ];
+
   return (
     <Box>
       <Box width={1} paddingX={2} paddingY={1}>
@@ -30,71 +44,16 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
         </Box>
       </Box>
       <Box paddingX={2} paddingY={2}>
-        <Box>
+        <Box marginBottom={2}>
           <NavItem title={'Ahorro e inversión'} items={companyPages} />
         </Box>
-        <Box>
-          <a
-            style={{
-              fontWeight: '800',
-              color: '#686868',
-              textDecoration: 'none',
-            }}
-            href=""
-          >
-            Trámites en línea
-          </a>
-        </Box>
-
-        <Box>
-          <a
-            style={{
-              fontWeight: '800',
-              color: '#686868',
-              textDecoration: 'none',
-            }}
-            href=""
-          >
-            Empresa
-          </a>
-        </Box>
-
-        <Box>
-          <a
-            style={{
-              fontWeight: '800',
-              color: '#686868',
-              textDecoration: 'none',
-            }}
-            href=""
-          >
-            Pensión
-          </a>
-        </Box>
-        <Box>
-          <a
-            style={{
-              fontWeight: '800',
-              color: '#686868',
-              textDecoration: 'none',
-            }}
-            href=""
-          >
-            Descuentos
-          </a>
-        </Box>
-        <Box>
-          <a
-            style={{
-              fontWeight: '800',
-              color: '#686868',
-              textDecoration: 'none',
-            }}
-            href=""
-          >
-            Eventos
-          </a>
-        </Box>
+        {links.map((link, index) => (
+          <Box key={index} marginBottom={1}>
+            <a style={linkStyles} href={link.href}>
+              {link.title}
+            </a>
+          </Box>
+        ))}
       </Box>
     </Box>
   );

@@ -11,7 +11,7 @@ const TopNav = (): JSX.Element => {
       marginTop={{ sm: 1 }}
       alignItems={'center'}
     >
-      <Box marginRight={{ xs: 0, sm: 2 }}>
+      <Box marginRight={{ xs: 0, sm: 1 }}>
         <Link
           underline="none"
           component="a"
@@ -30,7 +30,7 @@ const TopNav = (): JSX.Element => {
           </Box>
         </Link>
       </Box>
-      <Box marginRight={{ xs: 0, sm: 2 }}>
+      <Box marginRight={{ xs: 0, sm: 1 }}>
         <Link
           underline="none"
           component="a"
@@ -49,7 +49,7 @@ const TopNav = (): JSX.Element => {
           </Box>
         </Link>
       </Box>
-      <Box marginRight={{ xs: 0, sm: 2 }}>
+      <Box marginRight={{ xs: 0, sm: 1 }}>
         <Link
           underline="none"
           component="a"

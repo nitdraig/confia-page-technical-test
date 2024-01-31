@@ -1,16 +1,10 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import {
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  Stack,
-} from '@mui/material';
+import { IconButton, Stack } from '@mui/material';
 import { NavItem } from './components';
 import { Menu } from '@mui/icons-material';
 import Link from 'next/link';
+
 interface Props {
   onSidebarOpen: () => void;
   pages: {
@@ -21,6 +15,19 @@ interface Props {
 
 const Topbar = ({ onSidebarOpen, pages }: Props): JSX.Element => {
   const { company: companyPages } = pages;
+  const linkStyles = {
+    fontWeight: '800',
+    color: '#686868',
+    textDecoration: 'none',
+    marginLeft: '1.5em',
+  };
+
+  const links = [
+    { title: 'Empresa', href: '#' },
+    { title: 'Pensión', href: '#' },
+    { title: 'Descuentos', href: '#' },
+    { title: 'Eventos', href: '#' },
+  ];
 
   return (
     <Box
@@ -41,28 +48,6 @@ const Topbar = ({ onSidebarOpen, pages }: Props): JSX.Element => {
           <Menu />
         </IconButton>
       </Stack>
-      <Drawer anchor="left" open={false} onClose={onSidebarOpen}>
-        <List>
-          <ListItem>
-            <ListItemText primary="Trámites en línea" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Ahorro e inversión" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Empresa" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Pensión" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Descuentos" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Eventos" />
-          </ListItem>
-        </List>
-      </Drawer>
       <Link href="/#">
         <Box
           component="img"
@@ -72,7 +57,6 @@ const Topbar = ({ onSidebarOpen, pages }: Props): JSX.Element => {
           display="block"
         />
       </Link>
-
       <Box display={{ xs: 'none', md: 'flex' }}>
         <a
           href="/#"
@@ -91,50 +75,13 @@ const Topbar = ({ onSidebarOpen, pages }: Props): JSX.Element => {
           id={'company-pages'}
           items={companyPages}
         />
-        <a
-          href="#"
-          style={{
-            fontWeight: '800',
-            color: '#686868',
-            textDecoration: 'none',
-            marginLeft: '20px',
-          }}
-        >
-          Empresa
-        </a>
-        <a
-          href="#"
-          style={{
-            fontWeight: '800',
-            color: '#686868',
-            textDecoration: 'none',
-            marginLeft: '20px',
-          }}
-        >
-          Pensión
-        </a>
-        <a
-          href="#"
-          style={{
-            fontWeight: '800',
-            color: '#686868',
-            textDecoration: 'none',
-            marginLeft: '20px',
-          }}
-        >
-          Descuentos
-        </a>
-        <a
-          href="#"
-          style={{
-            fontWeight: '800',
-            color: '#686868',
-            textDecoration: 'none',
-            marginLeft: '20px',
-          }}
-        >
-          Eventos
-        </a>
+        {links.map((link, index) => (
+          <Box key={index} marginBottom={1}>
+            <a style={linkStyles} href={link.href}>
+              {link.title}
+            </a>
+          </Box>
+        ))}
       </Box>
     </Box>
   );

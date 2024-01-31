@@ -4,6 +4,7 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { ContactForm, Features, Us, Benefits, Hero } from './components';
 import { ContactFormData } from './components/ContactForm/ContactForm';
+import { Socialbox } from 'components/Socialbox';
 
 const IndexView = (): JSX.Element => {
   const handleSubmit = (formData: ContactFormData) => {
@@ -28,6 +29,7 @@ const IndexView = (): JSX.Element => {
           <ContactForm onSubmit={handleSubmit} />
         </Container>
       </Main>
+      <Socialbox />
     </Box>
   );
 };

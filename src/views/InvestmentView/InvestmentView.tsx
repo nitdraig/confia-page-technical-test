@@ -11,7 +11,7 @@ import {
   Record,
   Agents,
 } from './components';
-
+import { Socialbox } from 'components/Socialbox';
 const CareerListing = (): JSX.Element => {
   const [faqs, setFaqs] = useState([]);
   const [listItems, setListItems] = useState([]);
@@ -76,7 +76,7 @@ const CareerListing = (): JSX.Element => {
             borderRight: '1px solid #e0e0e0',
             margin: '0 auto',
             width: 'calc(100% - 40px)',
-            marginBottom: '23m',
+            marginBottom: '23px',
           }}
           maxWidth={600}
         >
@@ -100,6 +100,7 @@ const CareerListing = (): JSX.Element => {
           </Container>
         </Box>
       </Box>
+      <Socialbox />
     </Main>
   );
 };

@@ -31,14 +31,22 @@ const NavItem = ({ title, items }: Props): JSX.Element => {
         sx={{ backgroundColor: 'transparent' }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+              sx={{
+                width: 16,
+                height: 16,
+                color: '#D3282A',
+              }}
+            />
+          }
           aria-controls="panel1a-content"
           id="panel1a-header"
           sx={{ padding: 0 }}
         >
           <Typography
-            fontWeight={hasActiveLink() ? 600 : 400}
-            color={hasActiveLink() ? 'primary' : 'text.primary'}
+            fontWeight={hasActiveLink() ? 500 : 800}
+            color={'#686868'}
           >
             {title}
           </Typography>
@@ -54,34 +62,12 @@ const NavItem = ({ title, items }: Props): JSX.Element => {
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',
-                    color:
-                      activeLink === p.href
-                        ? theme.palette.primary.main
-                        : theme.palette.text.primary,
-                    backgroundColor:
-                      activeLink === p.href
-                        ? alpha(theme.palette.primary.main, 0.1)
-                        : 'transparent',
-                    fontWeight: activeLink === p.href ? 600 : 400,
+                    color: ' #4e4e4e',
+                    backgroundColor: alpha('#D3282A', 0.1),
+                    fontWeight: activeLink === p.href ? 1000 : 800,
                   }}
                 >
                   {p.title}
-                  {p.isNew && (
-                    <Box
-                      padding={0.5}
-                      display={'inline-flex'}
-                      borderRadius={1}
-                      bgcolor={'primary.main'}
-                      marginLeft={2}
-                    >
-                      <Typography
-                        variant={'caption'}
-                        sx={{ color: 'common.white', lineHeight: 1 }}
-                      >
-                        new
-                      </Typography>
-                    </Box>
-                  )}
                 </Button>
               </Grid>
             ))}
