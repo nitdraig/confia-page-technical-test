@@ -56,14 +56,14 @@ export default function Page({ children }: Props): JSX.Element {
     });
   }, []);
 
-  const [themeMode, themeToggler, mountedComponent] = useDarkMode();
+  const [themeMode, mountedComponent] = useDarkMode();
 
   useEffect(() => {
     AOS.refresh();
   }, [mountedComponent, themeMode]);
 
   return (
-    <ThemeProvider theme={getTheme(themeMode, themeToggler)}>
+    <ThemeProvider theme={getTheme(themeMode)}>
       <CssBaseline />
       <Paper elevation={0}>{children}</Paper>
     </ThemeProvider>

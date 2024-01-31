@@ -5,7 +5,7 @@
 
 * Para **ejecutar los tests**: "npm test"
 
-* **Explicación:**
+## **Explicación:**
 - De la plantilla eliminé carpetas redundantes, y opté por usar un estilo de componentización similar al pre-existente.
 - Agregué el globals.css para poder hacer deplazamientos sútiles desde las navbars.
 - La sección principal esta en "views/IndexView" renderiza las vistas de la página principal.

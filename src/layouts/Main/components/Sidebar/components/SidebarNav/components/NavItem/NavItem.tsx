@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { alpha, useTheme } from '@mui/material/styles';
+import { alpha } from '@mui/material/styles';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -15,7 +15,6 @@ interface Props {
 }
 
 const NavItem = ({ title, items }: Props): JSX.Element => {
-  const theme = useTheme();
   const [activeLink, setActiveLink] = useState('');
   useEffect(() => {
     setActiveLink(window && window.location ? window.location.pathname : '');

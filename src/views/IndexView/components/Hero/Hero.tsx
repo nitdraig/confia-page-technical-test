@@ -131,8 +131,7 @@ const Hero = (): JSX.Element => {
               >
                 <Button
                   component={'a'}
-                  href="/#"
-                  target={'blank'}
+                  href="/investment"
                   variant="outlined"
                   style={{ borderColor: '#D3282A', color: '#D3282A' }}
                   size="large"

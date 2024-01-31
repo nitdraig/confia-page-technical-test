@@ -69,15 +69,14 @@ const Footer = (): JSX.Element => {
   return (
     <Grid style={{ backgroundColor: '#c7c7c7' }}>
       <Box style={{ backgroundColor: '#7a7a7a' }}>
-        <Box marginBottom={6} display={'flex'} justifyContent={'center'}>
+        <Box marginBottom={0} display={'flex'} justifyContent={'center'}>
           <Button
             variant="contained"
             style={{
               backgroundColor: '#ffffff',
               color: '#6b6b6b',
               fontWeight: 800,
-              marginTop: '2em',
-              marginBottom: '-2.5em',
+              marginTop: '3em',
             }}
           >
             Servicio de asistencia

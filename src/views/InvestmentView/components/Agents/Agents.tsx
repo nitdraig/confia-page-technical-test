@@ -14,7 +14,7 @@ interface TablesAgentsProps {
 
 const Agents: React.FC<TablesAgentsProps> = ({ tables }) => {
   return (
-    <Box paddingLeft={2} paddingRight={2}>
+    <Box paddingLeft={2} paddingRight={2} marginBottom={10}>
       <Box>
         <Typography
           align={'left'}
