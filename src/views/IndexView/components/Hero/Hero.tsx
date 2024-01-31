@@ -71,10 +71,6 @@ const Hero = (): JSX.Element => {
   return (
     <Box
       sx={{
-        backgroundImage: `linear-gradient(to bottom, ${alpha(
-          theme.palette.background.paper,
-          0,
-        )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
         backgroundRepeat: 'repeat-x',
         position: 'relative',
       }}

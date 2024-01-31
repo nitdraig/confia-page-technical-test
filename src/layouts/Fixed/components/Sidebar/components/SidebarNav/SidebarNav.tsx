@@ -10,7 +10,7 @@ interface Props {
   onClose: () => void;
   pages: Array<{
     groupTitle: string;
-    pages: Array<PageItem>;
+    pages: any;
   }>;
 }
 

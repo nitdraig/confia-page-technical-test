@@ -14,7 +14,7 @@ import Link from 'next/link';
 interface Props {
   onSidebarOpen: () => void;
   pages: {
-    company: Array<PageItem>;
+    company: any;
   };
   colorInvert?: boolean;
 }

@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 
 interface Props {
   title: string;
-  items: Array<PageItem>;
+  items: any;
 }
 
 const NavItem = ({ title, items }: Props): JSX.Element => {

@@ -4,7 +4,7 @@ import NavItem from './components/NavItem';
 
 interface Props {
   pages: {
-    company: Array<PageItem>;
+    company: any;
   };
 }
 

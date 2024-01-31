@@ -10,7 +10,7 @@ interface Props {
   variant: 'permanent' | 'persistent' | 'temporary' | undefined;
   pages: Array<{
     groupTitle: string;
-    pages: Array<PageItem>;
+    pages: any;
   }>;
 }
 

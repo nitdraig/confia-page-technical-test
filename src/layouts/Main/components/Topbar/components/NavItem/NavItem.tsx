@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 interface Props {
   title: string;
   id: string;
-  items: Array<PageItem>;
+  items: any;
   colorInvert?: boolean;
 }
 

@@ -9,7 +9,7 @@ interface Props {
   open: boolean;
   variant: 'permanent' | 'persistent' | 'temporary' | undefined;
   pages: {
-    company: Array<PageItem>;
+    company: any;
   };
 }
 

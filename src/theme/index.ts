@@ -56,7 +56,6 @@ const getTheme = (mode: string, themeToggler: () => void): Theme =>
           } as ComponentsOverrides['MuiCard'],
         },
       },
-      themeToggler,
     }),
   );
 
