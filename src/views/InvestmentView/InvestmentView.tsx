@@ -12,6 +12,9 @@ import {
   Agents,
 } from './components';
 import { Socialbox } from 'components/Socialbox';
+import { SideLeftSection } from 'components/SideLeftSection';
+import { SideRightSection } from 'components/SideRightSection';
+
 const InvestmentView = (): JSX.Element => {
   const [faqs, setFaqs] = useState([]);
   const [listItems, setListItems] = useState([]);
@@ -88,8 +91,18 @@ const InvestmentView = (): JSX.Element => {
           width: 'calc(100% - 40px)',
           marginBottom: '23px',
         }}
-        maxWidth={600}
+        maxWidth={700}
       >
+        <Box
+          sx={{
+            '@media (max-width: 1100px)': {
+              display: 'none',
+            },
+          }}
+        >
+          <SideLeftSection />
+          <SideRightSection />
+        </Box>
         <Funds />
         <Attention />
         <Faq faqs={faqs} />

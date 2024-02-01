@@ -28,7 +28,7 @@ const Hero = (): JSX.Element => {
                   'https://res.cloudinary.com/draig/image/upload/v1706579019/pruebas/confia/y0rpwg5f10pwp0nigtla.png'
                 }
                 sx={{
-                  marginTop: { xs: '-3em', sm: '-4em', md: '-4em' },
+                  marginTop: { xs: '-3em', sm: '-4em', md: '-6em' },
                 }}
                 alt="Confía background"
               />
